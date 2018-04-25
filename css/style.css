@@ -70,15 +70,21 @@ body {
    
 }
 .navbar-default .navbar-brand {
-    width: 311px;
-     background-image: url(../images/Logo-Saybo.png);
+    /*width: 311px;
+     background-image: url(../images/Logo-Saybo.png);*/
+     padding: 0;
+}
+.logo {
+    margin-top: 10px;
 }
 .navbar-default {
 	background-color:#FFF;
     border-color:transparent;
 }
 .navbar {
-	margin-bottom:0px;
+	margin-bottom: 0px;
+    padding: 0 10px;
+    border-bottom: 4px solid #3e4599;
 }
 .navbar-default .navbar-nav>li>a {
     color: #3e4599;
@@ -101,7 +107,7 @@ body {
 /*-- /Navbar --*/
 /*-- banner --*/
 .banner {
-	margin:0;
+	margin-top: 74px;
 	padding:0;
 }
 /*-- /Banner --*/
@@ -109,32 +115,49 @@ body {
     text-align: justify;
 }
 /*-- About --*/
-section {
-	padding:100px 0;
+.nav>li>a {
+    padding: 25px;
 }
-section.about-us {
+.pageHeader {
+    margin-top: 80px;
+    padding: 50px 18px;
+    text-align: center;
+}
+.pageHeader h1 {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+}
+section {
+	padding: 100px 0;
+}
+/*section.about-us {
 	background:url(../images/fog.jpg) no-repeat;
 	background-attachment:fixed;
 	background-position:center;
 	background-size:100% 100%;
+}*/
+#about {
+	background-color: #fafafa;
 }
 section.about-us h3 {
     margin: 0;
-	font-family: 'PT Sans', sans-serif;
-    
+	font-family: 'Raleway', sans-serif;
     font-size:3em;
 	padding-bottom: 50px;
 	color:#fff;
 }
 section.about-us p {
 	font-size: 19px;
-    color: #fff;
     font-weight: 300;
 	line-height: 1.7em;
+	color: #000000;
 }
 .btn-outline {
     margin-top: 15px;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
     border: solid 2px #fff;
     font-size: 20px;
     color: #fff;
@@ -183,7 +206,7 @@ section.about-us p {
     color:#4D8A00;
 }
 .grid figcaption h3 {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
      
 	margin: 0;
 	padding: 0;
@@ -194,7 +217,7 @@ section.about-us p {
 	content: 'by ';
 }
 .grid figcaption a {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	text-align: center;
 	font-size:17px;
     font-weight: 600;
@@ -295,7 +318,7 @@ section.about-us p {
 	background: #3e4599;
 }
 h3.section-heading {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 	font-size:2.5em;
 	color: #FFF;
@@ -356,14 +379,14 @@ background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(179,78,144,0
 
 }
 section.our-services h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
     font-weight: 600;
 	padding-bottom: 30px;
 	color: #b23587;
 }
 section.our-services h4 {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	padding:20px 0;
 	font-size: 22px;
 	color:#fff;
@@ -403,7 +426,7 @@ section#portfolio {
 	background-size:100% 100%;
 }
 section#portfolio h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom: 50px;
     font-weight:600;
@@ -468,7 +491,7 @@ section#portfolio h3.text-center {
 .portfolio-modal .modal-content h3 {
     margin: 0;
     font-size: 3em;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	color: #fff;
 }
 .portfolio-modal .modal-content img {
@@ -528,13 +551,13 @@ background: -ms-linear-gradient(top, rgba(179,78,144,1) 0%, rgba(179,78,144,1) 7
 background: linear-gradient(to bottom, rgba(179,78,144,1) 0%, rgba(179,78,144,1) 73%, rgba(62,69,153,1) 100%);
 }
 section.our-blog h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom: 50px;
 	color:#fff;
 }
 section.our-blog a h4{
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:22px;
 	padding:20px 0;
 	font-weight: 500;
@@ -585,7 +608,7 @@ section.our-blog a {
    position: relative;
 }
 .view h5 {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
@@ -604,7 +627,7 @@ section.our-blog a {
 	text-align: center;
 }
 .view a.info {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	display: inline-block;
 	text-decoration: none;
 	padding: 7px 14px;
@@ -622,11 +645,11 @@ section.our-blog a {
 }
 /*-- /Blog --*/
 /*-- contact-us --*/
-section.contact-us {
-	background-color:#e9ffe9;
+section.contact-us, section.products-and-services {
+	background-color: #fafafa;
 }
 section.contact-us h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
@@ -637,7 +660,7 @@ section.contact-us p.text-center {
 	color:#999;
 }
 section.contact-us h4 {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
     font-size: 20px;
     padding: 20px 0;
     font-weight: bold;
@@ -670,7 +693,7 @@ section.contact-form {
 	-ms-background-size:100% 100%;
 }
 section.contact-form h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:35px;
 	color:#fff;
@@ -704,7 +727,7 @@ footer {
     
 }
 footer h4 {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:25px;
 	padding-bottom:35px;
 	color: #fff;
@@ -725,14 +748,14 @@ footer a:hover {
 }
 footer .footer-above {
     padding-top: 50px;
-    background-color:#3e4599;
+	background-color: #040525;
 }
 footer .footer-col {
     margin-bottom: 50px;
 }
 footer .footer-below {
     padding: 25px 0;
-    background-color:#2f3574;
+	background-color: #01031d;
 }
 .btn-social {
     display: inline-block;
@@ -839,7 +862,7 @@ footer .footer-below {
 	text-align: center;
 	margin-top: 90px;
 	color: #fff;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-weight: 700;
 }
 .pogoSlider-slide-element {
@@ -850,7 +873,7 @@ footer .footer-below {
 }
 .pogoSlider-slide-element h3 {
     color: #fff!important;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
     font-weight:bold;
     font-size: 50px;
 	padding:0 100px 30px;
@@ -885,7 +908,7 @@ section.team-w3ls {
 	-ms-background-size:100% 100%;
 }
 section.team-w3ls h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
@@ -896,7 +919,7 @@ section.team-w3ls p.text-center {
 	color:#3e4599;
 }
 section.team-w3ls h4 {
-    font-family: 'PT Sans', cursive;
+    font-family: 'Raleway', cursive;
     padding: 20px 0;
     font-size: 22px;
 	color:#3e4599;
@@ -919,7 +942,7 @@ section.testimonial {
 	background:#e9ffe9;
 }	
 section.testimonial h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
@@ -935,7 +958,7 @@ section.blog-w3ls {
 	
 }
 section.blog-w3ls h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
@@ -999,7 +1022,7 @@ section.blog-w3ls h3.ctitle {
 	font-weight:600;
 	color:#3e4599;
 	padding:20px 0;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 }
 section.blog-w3ls p.blog-p1 {
     font-size: 17px;
@@ -1018,7 +1041,7 @@ section.blog-w3ls p.blog-p3 {
 	margin-bottom:47px;	
 }
 section.blog-w3ls p.blog-p3 a.btn-outline {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
     border: solid 1px #3e4599;
     font-size: 20px;
 	font-weight:bold;
@@ -1043,7 +1066,7 @@ section.blog-w3ls h4 {
 	font-weight:bold;
     padding-bottom: 15px;
 	color:#3e4599;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 }
 section.blog-w3ls input.form-control {
     border-color:#3e4599;
@@ -1107,7 +1130,7 @@ section.blogpost-w3ls {
 	
 }
 section.blogpost-w3ls h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
@@ -1122,7 +1145,7 @@ section.blogpost-w3ls h3.ctitle {
 	font-weight:bold;
 	color:#3e4599;
 	padding:20px 0;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 }
 section.blogpost-w3ls p.blog-p1 {
     font-size: 17px;
@@ -1142,7 +1165,7 @@ section.blogpost-w3ls h4 {
 	font-weight:bold;
     padding-bottom: 15px;
 	color:#3e4599;
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 }
 section.blogpost-w3ls blockquote {
     padding: 10px 20px;
@@ -1167,7 +1190,7 @@ section.blogpost-w3ls h4.media-heading {
     font-weight: bold;
 	padding-bottom:0;
     color: #3e4599;
-    font-family: 'PT Sans', cursive;
+    font-family: 'Raleway', cursive;
 }
 section.blogpost-w3ls h4.media-heading small {
 	font-family: 'Raleway', sans-serif;
@@ -1202,7 +1225,7 @@ section.blogpost-w3ls .btn-social:hover,section.blogpost-w3ls .btn-social:focus,
     background: #3e4599;
 }
 section.blogpost-w3ls button.btn-outline {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
     border: solid 1px #3e4599;
     font-size: 20px;
 	font-weight:bold;
@@ -1284,7 +1307,7 @@ section.gallery-w3ls {
 
 }	
 section.gallery-w3ls h3.text-center {
-    font-family: 'PT Sans', cursive;
+    font-family: 'Raleway', cursive;
     font-size: 3em;
     padding-bottom: 10px;
     color: #3e4599;
@@ -1300,7 +1323,7 @@ section.galleryitem-w3ls {
 
 }
 section.galleryitem-w3ls h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
@@ -1315,7 +1338,7 @@ section.galleryitem-w3ls h4 {
     font-weight: bold;
     padding-bottom: 15px;
     color: #3e4599;
-    font-family: 'PT Sans', cursive;
+    font-family: 'Raleway', cursive;
 }
 section.galleryitem-w3ls p.blog-p2 {
     font-size: 16px;
@@ -1335,7 +1358,7 @@ section.item-w3ls {
 	-ms-background-size:100% 100%;
 }
 #portfoliowrap h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
@@ -1354,7 +1377,7 @@ section.galleryitem-w3ls p.gal-p1 {
 /*-- /gallery item page --*/
 /*-- typography --*/
 section.typography-w3ls h3.text-center {
-	font-family: 'PT Sans', cursive;
+	font-family: 'Raleway', cursive;
 	font-size:3em;
 	padding-bottom:10px;
 	color:#3e4599;
